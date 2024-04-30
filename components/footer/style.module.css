@@ -206,3 +206,12 @@
         font-size: 12px;
     }
 }
+/* Media query for screens smaller than 384px */
+@media (max-width: 384px) {
+    .footer-mobile1 input {
+        margin-bottom: 10px;
+    }
+    .footer-mobile1 button {
+        margin-left: 0px;
+    }
+}
