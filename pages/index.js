@@ -49,6 +49,14 @@ export async function getServerSideProps() {
   }
   catch (err) {
     console.log("Error while fetching data", err);
+    // Handle error
+
+    return {
+      redirect: {
+          destination: '/',
+          statusCode: 307
+      }
+  }
   }
 }
 
