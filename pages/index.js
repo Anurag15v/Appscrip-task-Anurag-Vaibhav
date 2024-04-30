@@ -7,17 +7,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 function index(props) {
-  const [showFilter, setShowFilter] = useState(false);
-  const schemaMarkup = {
-    "@context": "https://schema.org",
-    "@type": "WebSite", // Changed type to WebSite
-    "url": "https://yourwebsite.com", // Replace with your website URL
-    "name": "Metta Muse", // Replace with your website name
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "/search?q={search term}" // Update search URL pattern
-    },
-  };
+  const [showFilter, setShowFilter] = useState(false)
   return (
     <div>
       <Head>
@@ -31,10 +21,6 @@ function index(props) {
         <CombinedView filter={showFilter} data={props.repo} />
         <Footer />
       </main>
-      <script
-        strategy="afterInteractive" // Ensures script loads after initial render
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
-      />
     </div>
   )
 }
