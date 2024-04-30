@@ -17,8 +17,8 @@ function index() {
     // Container div with a class from the imported CSS module
     <div className={styles['banner-container']}>
       {/* Conditionally rendering Image component based on window width */}
-      {windowWidth > 768 && <Image className={styles['banner']} src={laptopBanner} />}
-      {windowWidth <= 768 && <Image className={styles['banner']} src={mobileBanner} />}
+      {windowWidth > 768 && <Image alt="banner" className={styles['banner']} src={laptopBanner} />}
+      {windowWidth <= 768 && <Image alt="banner" className={styles['banner']} src={mobileBanner} />}
     </div>
   )
 }

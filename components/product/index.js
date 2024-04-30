@@ -16,11 +16,11 @@ function index(props) {
   return (
     <div className={styles['product-container']}>
       {/* Render different image sizes based on window width */}
-      {windowWidth > 1130 && <Image alt="product-image" width={300} height={350} src={props.data.image} />}
-      {windowWidth >= 965 && windowWidth < 1130 && <Image alt="product-image" width={250} height={300} src={props.data.image} />}
-      {windowWidth >= 552 && windowWidth < 965 && <Image alt="product-image" width={200} height={200} src={props.data.image} />}
-      {windowWidth >= 416 && windowWidth < 552 && <Image alt="product-image" width={150} height={150} src={props.data.image} />}
-      {windowWidth < 416 && <Image alt="product-image" width={130} height={130} src={props.data.image} />}
+      {windowWidth > 1130 && <Image alt="product-image" priority={true} width={300} height={350} src={props.data.image} />}
+      {windowWidth >= 965 && windowWidth < 1130 && <Image priority={true} alt="product-image" width={250} height={300} src={props.data.image} />}
+      {windowWidth >= 552 && windowWidth < 965 && <Image priority={true} alt="product-image" width={200} height={200} src={props.data.image} />}
+      {windowWidth >= 416 && windowWidth < 552 && <Image priority={true} alt="product-image" width={150} height={150} src={props.data.image} />}
+      {windowWidth < 416 && <Image priority={true} alt="product-image" width={130} height={130} src={props.data.image} />}
       
       {/* Display truncated title */}
       <p className={styles['title']}>{truncatedTitle}</p>
