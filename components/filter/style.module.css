@@ -1,0 +1,40 @@
+/* Arrow styles */
+.arrow {
+    width: 16px;
+    height: 16px;
+}
+
+/* Checkbox element styles */
+.checkbox-element {
+    display: flex;
+    align-items: center;
+}
+
+/* Sub-container of each filter element styles */
+.element-sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Container of each filter element styles */
+.element-container {
+    cursor: pointer;
+}
+
+/* Text styles for the 'Unselect All' link */
+.text1 {
+    text-decoration: underline;
+    color: #BFC8CD;
+    font-size: 16px;
+    margin-top: auto; /* Align to the bottom */
+}
+
+/* Drop-down styles */
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Distribute items evenly */
+    row-gap: 10px; /* Gap between rows */
+    margin-bottom: 15px; /* Bottom margin */
+}

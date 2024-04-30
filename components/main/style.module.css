@@ -1,0 +1,48 @@
+/* Styles for the container */
+.container {
+    width: 620px; /* Set width to 620 pixels */
+    text-align: center; /* Center align text */
+}
+
+/* Styles for the main text */
+.main-text {
+    font-size: 45px; /* Set font size to 45 pixels */
+    font-weight: 400; /* Set font weight to normal */
+    color: #252020; /* Set text color to dark gray */
+    margin-bottom: auto; /* Automatically adjust bottom margin */
+    margin-top: 50px; /* Set top margin to 50 pixels */
+    overflow-wrap: break-word; /* Ensure text wraps within container */
+}
+
+/* Styles for the subtext */
+.main-sub-text {
+    font-size: 18px; /* Set font size to 18 pixels */
+    font-weight: 400; /* Set font weight to normal */
+    color: #252020; /* Set text color to dark gray */
+    margin-bottom: 50px; /* Set bottom margin to 50 pixels */
+    overflow-wrap: break-word; /* Ensure text wraps within container */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+    .main-text {
+        font-size: 35px; /* Adjust font size for smaller screens */
+    }
+    .main-sub-text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .container {
+        width: auto; /* Adjust width to auto for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .main-sub-text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Adjust bottom margin for smaller screens */
+    }
+    .main-text {
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+}

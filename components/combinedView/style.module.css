@@ -1,0 +1,12 @@
+/* Container styles */
+.filter-product-container {
+    width: 100%;
+}
+
+/* Sub-container styles */
+.filter-product-sub-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    column-gap: 20px; /* Gap between grid columns */
+}

@@ -1,0 +1,43 @@
+/* Styles for the side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 60%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(190, 186, 186,0.9); /* Semi-transparent background color */
+  overflow-x: hidden;
+  transition: 0.5s; /* Smooth transition effect */
+  padding-top: 60px; /* Padding top for the menu */
+}
+
+/* Styles for the links inside the side navigation menu */
+.sidenav a {
+  padding: 8px 8px 8px 32px; /* Padding for the links */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Font size */
+  color: black; /* Text color */
+  display: block; /* Display as block element */
+  transition: 0.3s; /* Smooth transition effect */
+}
+
+/* Hover effect for links */
+.sidenav a:hover {
+  color: #f1f1f1; /* Change text color on hover */
+}
+
+/* Styles for the close button */
+.sidenav .closebtn {
+  position: absolute; /* Positioning */
+  top: 0; /* Position from the top */
+  right: 25px; /* Position from the right */
+  font-size: 36px; /* Font size */
+  margin-left: 50px; /* Margin from the left */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-height: 450px) {
+  .sidenav { padding-top: 15px; } /* Adjust padding top */
+  .sidenav a { font-size: 18px; } /* Adjust font size for smaller screens */
+}

@@ -1,0 +1,208 @@
+/* Styles for the footer container */
+.footer-container {
+    background-color: #000000;
+    height: fit-content;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+/* Styles for the footer sub-container */
+.footer-sub-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Styles for the first section of the footer */
+.footer1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Styles for the second section of the footer */
+.footer2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Styles for the subsection within the second section */
+.footer-21 {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Margin for the subsection within the second section */
+.footer-212 {
+    margin-right: 30%;
+}
+
+/* Text color for paragraphs within the footer container */
+.footer-container p {
+    color: white;
+}
+
+/* Styles for bold text */
+.bold-text {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Styles for regular text */
+.text1 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Styles for additional text */
+.text2 {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* Styles for input boxes */
+.input-box {
+    margin-top: 30px;
+}
+
+/* Styles for input boxes within the first section */
+.footer1 input {
+    width: 300px;
+    height: 35px;
+    outline: none;
+}
+
+/* Margin for the mobile version of the first subsection */
+.footer-mobile1 {
+    margin-bottom: 25px;
+}
+
+/* Margin for the mobile version of the second subsection */
+.footer-mobile2 {
+    margin-bottom: 20px;
+}
+
+/* Margin for the mobile version of the third subsection */
+.footer-mobile3 {
+    margin-bottom: 10px;
+}
+
+/* Margin for the mobile version of the third subsection's paragraphs */
+.footer-mobile3 p {
+    margin-bottom: 10px;
+}
+
+/* Styles for input boxes within the mobile version of the first subsection */
+.footer-mobile1 input {
+    width: 300px;
+    height: 35px;
+    outline: none;
+}
+
+/* Styles for buttons within the mobile version of the first subsection */
+.footer-mobile1 button {
+    width: 130px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Styles for buttons within the first subsection */
+.footer1 button {
+    width: 130px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Styles for the copyright paragraph */
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Styles for images within the footer */
+.footer-image1 {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-image3 {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-image2 {
+    width: 56px;
+    height: 35px;
+}
+
+/* Styles for the currency container */
+.currency-container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/* Styles for the payment and follow containers */
+.payment-container,
+.follow-container {
+    display: flex;
+    column-gap: 5px;
+}
+
+/* Styles for the arrow-down image */
+.arrow-down {
+    width: 20px;
+    height: 20px;
+}
+
+/* Styles for the mobile version of the subsection container */
+.footer-mobile-sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for subsection text */
+.text3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Media query for screens smaller than 934px */
+@media (max-width: 934px) {
+    .bold-text {
+        font-size: 18px;
+    }
+    .text1 {
+        font-size: 14px;
+    }
+}
+
+/* Media query for screens smaller than 532px */
+@media (max-width: 532px) {
+    .footer-mobile1 input {
+        width: 200px;
+        height: 35px;
+        outline: none;
+    }
+    .footer-image2 {
+        width: 51px;
+        height: 30px;
+    }
+    .follow-container {
+        margin-bottom: 13px;
+    }
+    .bold-text {
+        font-size: 16px;
+    }
+    .text1 {
+        font-size: 12px;
+    }
+}

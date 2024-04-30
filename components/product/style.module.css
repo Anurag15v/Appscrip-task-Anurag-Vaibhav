@@ -1,0 +1,78 @@
+/* Styles for the product container */
+.product-container {
+    min-height: fit-content; /* Ensures the container adjusts its height based on content */
+    width: 300px; /* Initial width for desktop */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3); /* Faded box shadow */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Styles for the title */
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Styles for the signup text */
+.signup-text {
+    color: #888792;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* Styles for the favorite icon */
+.fav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Styles for underlined text */
+.text-decor {
+    text-decoration: underline;
+}
+
+/* Styles for the container holding text and icon */
+.text-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1130px) {
+    .product-container {
+        width: 250px; /* Adjusted width for smaller screens */
+    }
+    .title {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+    .signup-text {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (max-width: 965px) {
+    .product-container {
+        width: 200px; /* Further adjusted width for smaller screens */
+    }
+}
+
+@media (max-width: 552px) {
+    .product-container {
+        width: 150px; /* Further adjusted width for smaller screens */
+    }
+    .title {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+    .signup-text {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (max-width: 416px) {
+    .product-container {
+        width: 130px; /* Adjusted width for smallest screens */
+    }
+}
