@@ -28,7 +28,7 @@ function index(props) {
 export async function getServerSideProps() {
   try {
     // Fetch data from external API
-    const res = await fetch('https://fakestoreapi.com/products?limit=18')
+    const res = await fetch('https://fakestoreapi.com/products?limit=9')
     const repo = await res.json()
     // Pass data to the page via props
     return { props: { repo } }
